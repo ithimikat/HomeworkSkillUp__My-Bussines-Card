@@ -1,0 +1,277 @@
+body {
+	font-family: arial;
+	width: 100%;
+	margin: 0px;
+	color: #727475;
+}
+.first {
+	background-color: #EDEFF1;
+	padding-bottom: 180px;
+}
+#logo{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20%;
+}
+.navigation {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	float: right;
+	margin-top: 22px;
+	margin-right: 20%;
+}
+.design {
+	margin-top: 140px;
+	margin-left: 20%;
+}
+ul > li {
+	list-style-type: none;
+	float: left;
+	padding: 15px;
+}
+#notebook {
+	float: left;
+	margin-right: 7%;
+}
+.button {
+	background-color: #34557A;
+	border: none;
+	padding: 20px 40px 20px 40px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 30px;
+}
+#main {
+	color: #345697;
+}
+h1 {
+	color: #000000;
+	font-size: 44px;
+	margin-bottom: 40px;
+}
+.second {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+	line-height: 25px;
+}
+h2 {
+	color: #000000;
+	font-size: 32px;
+}
+.third {
+	background-color: #34557A;
+	color: #FFFFFF;
+	padding-left: 19%;
+	padding-right: 19%;
+	display: block;
+}
+.img2 {
+	float: left;
+	margin: 20px;
+}
+.project {
+	margin-top: 80px;
+	margin-bottom: 80px;
+	display: inline-block;
+}
+.project > p {
+	float: right;
+	padding-top: 10px;
+}
+.maxskill {
+	background-color: #C9C9C9;
+	height: 4px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.skill {
+	background-color: #39536C;
+	height: 4px;
+	width: 78%;
+}
+.skills {
+	width: 23%;
+}
+#man {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 450px;
+}
+
+.fourth {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*
+	====================================================
+    НАЧАЛО БЛОКА С ВИДЕО
+*/
+
+.block-how-i-work {
+	background-color: #EEEFF1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+
+.text-container {
+	width: 450px;
+	text-align: center;
+}
+
+.video {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 25px;
+}
+
+img[title="code"]{
+	width: 100%;
+}
+
+.play {
+	position: absolute;
+}
+/*
+	КОНЕЦ БЛОКА С ВИДЕО
+	==========================================================
+*/
+
+/*
+	===========================================================
+	НАЧАЛО БЛОКА С КАРТИНКАМИ ЗАМЕТКАМИ НА ДОСКЕ
+*/
+.img-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.note{
+	width: 25%;
+	height: 50%;
+	display: block;
+}
+/*
+	КОНЕЦ БЛОКА С КАРТИНКАМИ ЗАМЕТКАМИ НА ДОСКЕ
+	============================================================
+*/
+
+/*
+	============================================================
+	НАЧАЛО БЛОКА С КАРТИНКАМИ MICROSOFT
+*/
+.microsoft{
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.microsoft > img{
+	margin: 0 10px;
+}
+/*
+	КОНЕЦ БЛОКА С КАРТИНКАМИ MICROSOFT
+	============================================================
+*/
+
+/*
+	============================================================
+	НАЧАЛО БЛОКА С ФОРМОЙ
+*/
+.block-form{
+	padding: 50px 0;
+	background-color: #EEEFF1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form{
+	width: 450px;
+	padding-top: 40px;
+}
+
+.input-block{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+form{
+	text-align: center;
+}
+
+input{
+	width: 45%;
+	padding: 5px;
+}
+
+textarea{
+	padding: 5px;
+}
+
+button{
+	width: 40%;
+	height: 40px;
+	margin: 20px 0;
+	background-color: #34547A;
+	border: none;
+	color: white;
+}
+/*
+	КОНЕЦ БЛОКА С ФОРМОЙ
+	============================================================
+*/
+
+/*
+	============================================================
+	НАЧАЛО БЛОКА FOOTER
+*/
+footer{
+	height: 150px;
+	background-color: #34547A;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+.vk > a{
+	text-decoration: none;
+}
+
+.vk > a > img{
+	margin-right: 10px;
+}
+/*
+	КОНЕЦ БЛОКА FOOTER
+	============================================================
+*/
+
+@media(max-width: 992px){
+
+	.note{
+		width: 50%;
+		height: 25%;
+	}
+}
+
+@media(max-width: 576px){
+
+	.note{
+		width: 100%;
+	}
+}
+
+
