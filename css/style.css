@@ -1,111 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic');
+
 body {
-	font-family: arial;
-	width: 100%;
-	margin: 0px;
-	color: #727475;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
-.first {
-	background-color: #EDEFF1;
-	padding-bottom: 180px;
+
+a{
+	text-decoration: none;
 }
-#logo{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-left: 20%;
+
+header{
+	background-color: #EEEFF1;
+	padding: 50px 0 100px 0;
 }
-.navigation {
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 700;
-	float: right;
-	margin-top: 22px;
-	margin-right: 20%;
-}
-.design {
-	margin-top: 140px;
-	margin-left: 20%;
-}
-ul > li {
-	list-style-type: none;
-	float: left;
-	padding: 15px;
-}
-#notebook {
-	float: left;
-	margin-right: 7%;
-}
-.button {
-	background-color: #34557A;
-	border: none;
-	padding: 20px 40px 20px 40px;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	margin-top: 30px;
-}
-#main {
-	color: #345697;
-}
-h1 {
-	color: #000000;
-	font-size: 44px;
-	margin-bottom: 40px;
-}
-.second {
-	padding-top: 80px;
-	padding-bottom: 80px;
-	text-align: center;
-	line-height: 25px;
-}
+
 h2 {
 	color: #000000;
 	font-size: 32px;
 }
-.third {
-	background-color: #34557A;
-	color: #FFFFFF;
-	padding-left: 19%;
-	padding-right: 19%;
-	display: block;
-}
-.img2 {
-	float: left;
-	margin: 20px;
-}
-.project {
-	margin-top: 80px;
-	margin-bottom: 80px;
-	display: inline-block;
-}
-.project > p {
-	float: right;
-	padding-top: 10px;
-}
-.maxskill {
-	background-color: #C9C9C9;
-	height: 4px;
-	width: 100%;
-	margin-bottom: 20px;
-}
-.skill {
-	background-color: #39536C;
-	height: 4px;
-	width: 78%;
-}
-.skills {
-	width: 23%;
-}
-#man {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	width: 450px;
+
+p {
+	color: #727272;
 }
 
-.fourth {
+/*
+	НАЧАЛО СТИЛЕЙ ДЛЯ ШАПКИ
+*/
+.header-container{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+	height: 100px;
+	margin: 0 auto;
+	width: 90%;
+	padding-bottom: 100px;
 }
+
+header > .header-container > img{
+	width: 76px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+li{
+	margin: 0 20px;
+}
+
+h1{
+	font-size: 48px;
+	margin: -25px 0 0 0 ;
+}
+/*
+	КОНЕЦ СТИЛЕЙ ДЛЯ ШАПКИ
+*/
+
+/*
+	НАЧАЛО БЛОКА ГЛАВНОЙ ИНФОРМАЦИИ В ШАПКЕ О СТРАНИЦЕ
+*/
+.design{
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.design > img{
+	margin-bottom: 60px;
+}
+
+.message{
+	width: 550px;
+	padding: 0 30px 30px 30px;
+}
+/*
+	КОНЕЦ БЛОКА ГЛАВНОЙ ИНФОРМАЦИИ В ШАПКЕ О СТРАНИЦЕ
+*/
+
+/*
+	НАЧАЛО БЛОКА С ИНФОРМАЦИЕЙ ОБО МНЕ
+*/
+.about-me{
+	padding: 50px 0;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-me > p{
+	width: 450px;
+	text-align: center;
+}
+/*
+	КОНЕЦ БЛОКА С ИНФОРМАЦИЕЙ ОБО МНЕ
+*/
+
+/*
+	НАЧАЛО БЛОКА С КОЛЛИЧЕСТВОМ ПРОЕКТОВ
+*/
+.projects{
+	padding: 20px 0;
+	background-color: #34547A;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project{
+	margin: 50px;
+	width: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.project > img{
+	float: left;
+	padding-right: 10px;
+}
+/*
+	КОНЕЦ БЛОКА С КОЛЛИЧЕСТВОМ ПРОЕКТОВ
+*/
+
+/*
+	НАЧАЛО БЛОКА С НАВЫКАМИ
+*/
+div.skills{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 100px;
+	margin: 0 auto;
+}
+
+.skills > img{
+	width: 450px;
+}
+
+div.my-skills{
+	width: 400px;
+	padding: 50px;
+}
+
+.progress{
+	width: 100%;
+	height: 4px;
+	background-color: #C4C4C4;
+}
+
+hr{
+	width: 80%;
+	margin-left: 0;
+	height: 100%;
+	background-color: #34547A;
+	border: none;
+}
+/*
+	КОНЕЦ БЛОКА С НАВЫКАМИ
+*/
 
 /*
 	====================================================
@@ -222,7 +286,7 @@ textarea{
 }
 
 button{
-	width: 40%;
+	width: 300px;
 	height: 40px;
 	margin: 20px 0;
 	background-color: #34547A;
@@ -245,10 +309,6 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 	color: white;
-}
-
-.vk > a{
-	text-decoration: none;
 }
 
 .vk > a > img{
